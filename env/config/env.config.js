@@ -1,6 +1,6 @@
 const plugins = require('gulp-load-plugins')({ pattern: '*' });
 const source_folder_name = "src";
-const dest_folder_name = "public"
+const dest_folder_name = "docs"
 const log = console.log;
 
 const tasks = {
