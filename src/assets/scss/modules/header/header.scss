@@ -5,33 +5,94 @@
 .header-nav{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: baseline;
 	padding: 30px 0 0 0;
 	color: $color-white;
+
+	@include media('<lg') {
+		display: block;
+		text-align: center;
+	}
+	
 	& h1 {
 		text-transform: uppercase;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 26px;
-
 	}
 }
-#navigation {
-	& ul {
-		font-family: 'Open Sans', sans-serif;
-		display: flex;
+// start hamburger menu
+#navigation ul {
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	
+	@include media('<lg') {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    height: 80%;
 	}
+
 
 	& li {
 		font-size: 14px;
 		text-transform: uppercase;
 		margin: 0 15px 0 15px;
+		cursor: pointer;
+		@include media('<lg') {
+			font-size: 20px;
+			margin: 0 0px 35px 0px;
+		}
+
 	}
 }
+.desactive {
+	@include media("<lg") {
+		width: 50%;
+		height: 100%;
+  	position: fixed;
+  	z-index: 1;
+  	top: 0;
+		left: 0;
+  	background-color: #053c6bfa;
+  	overflow: hidden;
+
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 200ms, visibility 200ms;
+	}
+}
+.active{
+	width: auto;
+	@include media("<lg") {
+		width: 50%;
+		height: 100%;
+  	position: fixed;
+  	z-index: 1;
+  	top: 0;
+		left: 0;
+  	background-color: #053c6bfa;
+  	overflow: hidden;
+		visibility: visible;
+		opacity: 1;
+		transition: opacity 200ms, visibility 200ms;
+	}
+}
+// end hamburger menu
 .navigation-social {
 	margin:  0 0 0 10px;
-
 	& i {
 		margin:  0 5px 0 5px;
+		cursor: pointer;
+	}
+}
+.hamburger-menu {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	font-size: 40px;
+	@include media('>=lg') {
+		display: none;
 	}
 }
