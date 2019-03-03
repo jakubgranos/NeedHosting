@@ -1,16 +1,13 @@
 .header{
 	position: absolute;
 	width: 100%;
-
 	&-nav{
 		padding: 30px 0 0 0;
 		color: $color-white;
-	
-		@include media('<lg') {
-			display: block;
-			text-align: center;
-		}
-		
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
 		& h1 {
 			text-transform: uppercase;
 			font-family: 'Open Sans', sans-serif;
@@ -22,14 +19,13 @@
 // start hamburger menu
 #navigation ul {
 	font-family: 'Open Sans', sans-serif;
-	
+	display: flex;
 	@include media('<lg') {
-    justify-content: center;
     flex-direction: column;
-    align-content: center;
-    height: 80%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 	}
-
 
 	& li {
 		font-size: 14px;
@@ -53,7 +49,6 @@
 		left: 0;
   	background-color: #053c6bfa;
   	overflow: hidden;
-
 		opacity: 0;
 		visibility: hidden;
 		transition: opacity 200ms, visibility 200ms;
@@ -87,7 +82,10 @@
 	position: fixed;
 	top: 20px;
 	right: 20px;
-	font-size: 40px;
+	font-size: 25px;
+	background: #053c6bfa;
+	border-radius: 40px;
+	padding: 5px 10px 5px 10px;
 	@include media('>=lg') {
 		display: none;
 	}

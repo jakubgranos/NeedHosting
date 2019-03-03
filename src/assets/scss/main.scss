@@ -13,8 +13,9 @@
 @import 'helpers/colors.scss';
 @import 'helpers/fonts.scss';
 @import 'helpers/typography.scss';
-@import 'helpers/flex-types.scss';
+@import 'helpers/header-style.scss';
 @import 'helpers/reset.scss';
+
 
 /* Components
     ========================================================================== */
@@ -27,3 +28,4 @@
    ========================================================================== */
 @import 'modules/header/header.scss';
 @import 'modules/hero/hero.scss';
+@import 'modules/about/about.scss';
