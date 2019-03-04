@@ -9,7 +9,7 @@ function sticky() {
     navContainer.className = "containerAbs";
   }
   else if(window.scrollY >10){
-    navigation.className = "header-nav";
+    navigation.className = "header-navigation";
     navContainer.className = "container";
   }
 }

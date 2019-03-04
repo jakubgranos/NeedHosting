@@ -1,22 +1,14 @@
 .header{
 	position: absolute;
 	width: 100%;
-<<<<<<< HEAD
-	&-nav, .sticky{
-		padding: 30px 10px 10px 10px;
-=======
 	&-nav{
-		padding: 30px 0 0 0;
->>>>>>> 93457364cacc17493b8dee563c2ba0bb0fd56526
+		padding: 30px 10px 10px 10px;
 		color: $color-white;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-<<<<<<< HEAD
-		transition: 1s all;
-=======
->>>>>>> 93457364cacc17493b8dee563c2ba0bb0fd56526
 
+		
 		& h1 {
 			text-transform: uppercase;
 			font-family: 'Open Sans', sans-serif;
@@ -98,7 +90,6 @@
 	@include media('>=lg') {
 		display: none;
 	}
-<<<<<<< HEAD
 }
 .sticky {
 	@include media('>=lg') {
@@ -109,10 +100,11 @@
 		background-color: #053c6bfa;
 	}
 }
+.header-navigation, .sticky {
+	transition: 1s all;
+}
 .containerAbs {
 	@include media('>=lg') {
 	position: absolute;
 	}
-=======
->>>>>>> 93457364cacc17493b8dee563c2ba0bb0fd56526
 }
