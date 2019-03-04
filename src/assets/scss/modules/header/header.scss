@@ -1,0 +1,107 @@
+.header{
+	position: absolute;
+	width: 100%;
+	&-nav, .sticky{
+		padding: 30px 10px 10px 10px;
+		color: $color-white;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		transition: 1s all;
+
+		& h1 {
+			text-transform: uppercase;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 26px;
+		}
+	}
+}
+
+// start hamburger menu
+#navigation ul {
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	@include media('<lg') {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+	}
+
+	& li {
+		font-size: 14px;
+		text-transform: uppercase;
+		margin: 0 15px 0 15px;
+		cursor: pointer;
+		@include media('<lg') {
+			font-size: 20px;
+			margin: 0 0px 35px 0px;
+		}
+
+	}
+}
+.desactive {
+	@include media("<lg") {
+		width: 50%;
+		height: 100%;
+  	position: fixed;
+  	z-index: 1;
+  	top: 0;
+		left: 0;
+  	background-color: #053c6bfa;
+  	overflow: hidden;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 200ms, visibility 200ms;
+	}
+}
+.active{
+	width: auto;
+	@include media("<lg") {
+		width: 50%;
+		height: 100%;
+  	position: fixed;
+  	z-index: 1;
+  	top: 0;
+		left: 0;
+  	background-color: #053c6bfa;
+  	overflow: hidden;
+		visibility: visible;
+		opacity: 1;
+		transition: opacity 200ms, visibility 200ms;
+	}
+}
+// end hamburger menu
+.navigation-social {
+	margin:  0 0 0 10px;
+	& i {
+		margin:  0 5px 0 5px;
+		cursor: pointer;
+	}
+}
+.hamburger-menu {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	font-size: 25px;
+	background: #053c6bfa;
+	border-radius: 40px;
+	padding: 5px 10px 5px 10px;
+	@include media('>=lg') {
+		display: none;
+	}
+}
+.sticky {
+	@include media('>=lg') {
+		position: fixed;
+		background: black;
+		width: 100%;
+		margin: 0 auto;
+		background-color: #053c6bfa;
+	}
+}
+.containerAbs {
+	@include media('>=lg') {
+	position: absolute;
+	}
+}
