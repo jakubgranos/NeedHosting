@@ -8,7 +8,7 @@ function sticky() {
     navigation.className = "sticky";
     navContainer.className = "containerAbs";
   }
-  else if(window.scrollY >10){
+  else if(window.scrollY <20){
     navigation.className = "header-navigation";
     navContainer.className = "container";
   }
