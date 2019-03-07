@@ -4,13 +4,12 @@ const navTop = navigation.offsetTop;
 
 function sticky() {
 
-  if(window.scrollY >50) {
-    navigation.className = "sticky";
-    navContainer.className = "containerAbs";
-  }
-  else if(window.scrollY <20){
-    navigation.className = "header-navigation";
-    navContainer.className = "container";
-  }
+	if (window.scrollY > 50) {
+		navigation.className = "sticky";
+		navContainer.className = "containerAbs";
+	} else if (window.scrollY < 20) {
+		navigation.className = "header-navigation";
+		navContainer.className = "container";
+	}
 }
-window.addEventListener('scroll',sticky);
+window.addEventListener('scroll', sticky);
