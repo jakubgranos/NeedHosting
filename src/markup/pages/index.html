@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('../components/__base/html-head.html', {
-		"title": "hello gulp-markup-boilerplate"
-	})
-	<body>
-		@@include('page-header/page-header.html')
-		<main id="page-content">
-			@@include('hero/page-hero.html')
-			@@include('page-about/page-about.html')
-		</main>
-		@@include('page-footer/page-footer.html')
-	</body>
-	@@include('../components/__base/footer-scripts.html')
+@@include('../components/__base/html-head.html', {
+"title": "hello gulp-markup-boilerplate"
+})
+
+<body>
+	@@include('page-header/page-header.html')
+	<main id="page-content">
+		@@include('hero/page-hero.html')
+		@@include('page-about/page-about.html')
+	</main>
+	@@include('page-footer/page-footer.html')
+</body>
+@@include('../components/__base/footer-scripts.html')
 </html>

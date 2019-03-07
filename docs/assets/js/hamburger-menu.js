@@ -1,13 +1,10 @@
 const hamburger = document.getElementById("hamburger");
 const nav = document.getElementById("navigation");
 
-hamburger.onclick = function() {
-	if(nav.className == "active") {
+hamburger.onclick = function () {
+	if (nav.className == "active") {
 		nav.className = "desactive"
-
-	}
-	else {
+	} else {
 		nav.className = "active"
-		
 	}
 }
