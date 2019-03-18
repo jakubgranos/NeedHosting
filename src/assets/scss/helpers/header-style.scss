@@ -1,6 +1,7 @@
 .header-style {
 	text-transform: uppercase;
 	font-weight:600;
+	padding: 90px 0 0 0;
 	font-size: 36px;
 	font-family: 'Open Sans', sans-serif;
 	
@@ -14,4 +15,12 @@
 }
 .height-content {
 	height: 100%;
+}
+
+.project-border {
+	margin: 0 auto;
+	border-radius: 20px;
+	width: 78px;
+	height: 5px;
+	background-color: #dbdbdb;
 }

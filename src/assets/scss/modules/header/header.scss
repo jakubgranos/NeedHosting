@@ -91,6 +91,10 @@
 		display: none;
 	}
 }
+.hamburger-wrapper {
+	position: absolute;
+	z-index: 20;
+}
 .sticky {
 	@include media('>=lg') {
 		position: fixed;
