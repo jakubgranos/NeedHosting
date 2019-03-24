@@ -3,9 +3,10 @@
 }
 .premium-wrapper {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: wrap;
+	margin: 40px 0 0 0;
 }
 .premium-columns {
 	display: flex;
@@ -13,13 +14,15 @@
 	justify-content: space-around;
 	padding: 30px;
 	width: 350px;
-	height: 500px;
+	height: 620px;
 	background-color:$color-white;
 	transition: 0.4s all;
+	cursor: pointer;
 
 	&:hover{
 		background-color:	$color-gallery;
 		transition: 0.4s all;
+		box-shadow: 0px 3px 12px -2px $color-slate-gray;
 	}
 
 	& p:nth-child(3) {
@@ -48,6 +51,23 @@
 	& h5 {
 		color: $color-azure;
 		font-size: 16px;
+		margin: 10px 0 10px 0;
+	}
+
+	& button {
+		background: none;
+		border: 2px solid $color-slate-gray;
+		border-radius: 20px;
+		width: 50%;
+		padding: 10px;
+		margin:  0 auto;
+		transition: 0.4s all;
+		text-transform: uppercase;
+		&:hover{
+			background: $color-Tree-Poppy;
+			border: 2px solid $color-Tree-Poppy;
+			transition: 0.4s all;
+		}
 	}
 }
 .premium-border {

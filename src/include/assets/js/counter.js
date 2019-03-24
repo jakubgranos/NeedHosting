@@ -6,7 +6,7 @@ const counterElement4 = document.getElementById('counter-envelope');
 const counterWrapper = document.getElementById('counter');
 let startTime = 0;
 function myTimer() {
-	if(window.pageYOffset > 1100){
+	if(window.pageYOffset > 1200){
 		counterWrapper.className = "counter fadein";
 		counterElement.innerHTML = startTime;
 		counterElement2.innerHTML = startTime;
