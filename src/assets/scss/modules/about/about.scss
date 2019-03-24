@@ -57,20 +57,20 @@
     left: -28px;
     padding: 10px;
     background: $color-white;
-    border: 1px solid #cccccc;
+    border: 1px solid $color-silver;
     -webkit-transform: rotate(180deg);
 		transform: rotate(45deg);
 		
 		& i {
 			transform: rotate(-42deg);
-			color: #007ee5;
+			color: $color-azure;
 			font-size: 25px;
 		}
 	}
 
 	& h4 {
 		margin: 0 0 8px 0;
-		color: #18191a;
+		color: $color-woodsmoke;
 		font-family: "Open Sans";
 		font-size: 14px;
 		font-weight: 700;
@@ -78,12 +78,12 @@
 	}
 	
 	& p {
-		color: #a2a2a2;
+		color: $color-silver-chalice;
 		font-size: 13px;
 	}
 }
 .about-support-elements{
-	border: 1px solid #cccccc;
+	border: 1px solid $color-silver;
 	width: 250px;
 	height: auto;
 	padding: 50px 30px 50px 30px;

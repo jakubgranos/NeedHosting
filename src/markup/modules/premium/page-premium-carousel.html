@@ -1,0 +1,42 @@
+<section class="page-premium" id="premium">
+	<div class="container">
+		<div class="header-style">
+			<h2>our hosting plan</h2>
+			<p>We Work With Brands, Advertising Agencies, Startup Companies</p>
+		</div>
+		<div class="project-border">
+		</div>
+
+		<div class="premium-wrapper">
+      @@loop('../modules/premium/page-premium.html', [
+			{
+				"premium-title": "Silver",
+				"premium-border": "premium-border-silver",
+				"premium-expense": "$<span>14</span>/mo",
+        "premium-disk-space": "Disk space <span>120 GB</span>",
+        "premium-guarantee": "Guaranteed <span>1 GB Ram</span>",
+        "premium-bandthwith": "Bandwidth <span>1 TB</span>",
+        "premium-expand": "Expand"
+			},
+			{
+				"premium-title": "Gold",
+				"premium-border": "premium-border-gold",
+				"premium-expense": "$<span>25</span>/mo",
+        "premium-disk-space": "Disk space <span>150 GB</span>",
+        "premium-guarantee": "Guaranteed <span>2 GB Ram</span>",
+        "premium-bandthwith": "Bandwidth <span>2 TB</span>",
+        "premium-expand": "Collapse"
+			},
+			{
+				"premium-title": "Premium",
+				"premium-border": "premium-border-platinium",
+				"premium-expense": "$<span>42</span>/mo",
+        "premium-disk-space": "Disk space <span>210 GB</span>",
+        "premium-guarantee": "Guaranteed <span>8 GB Ram</span>",
+        "premium-bandthwith": "Bandwidth <span>4 TB</span>",
+        "premium-expand": "Expand"
+			}
+			])
+		</div>
+	</div>
+</section>
