@@ -1,0 +1,36 @@
+.page-agencies {
+  background: $color-gallery;
+  width: 100%;
+  height: auto;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.swiper-wrapper2 {
+  height: 220px;
+  @include media('<lg') {
+    height: 490px;
+  }
+}
+.swiper-pagination-bullet{
+  width: 11px;
+  height: 11px;
+  color: $color-alto;
+}
+.swiper-pagination-bullet-active {
+  background: $color-alto-reverse;
+}
+.agencies {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid $color-alto-reverse;
+  @include media('<lg') {
+    flex-direction: column;
+  }
+  &-elements {
+    padding: 25px 45px 25px 42px;
+    border-right: 1px solid $color-alto-reverse;
+    @include media('<lg') {
+      border-bottom: 1px solid $color-alto-reverse;
+    }
+  }
+}

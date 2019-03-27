@@ -8,3 +8,6 @@ import "./modules/counter";
 import "./modules/hamburger-menu";
 import "./modules/sticky";
 import "./modules/swiper";
+
+import sliders from "./modules/swiper"
+sliders();
