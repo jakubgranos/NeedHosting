@@ -1,0 +1,37 @@
+<section class="client-slider">
+  <div class="container">
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="clients-title">
+        <h2>what clients say?</h2>
+        <p>Connect with over 4.5 million hoster in the World</p>
+      </div>
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+      @@loop('../modules/client-slider/client-slider-carousel.html', [
+			{
+				"client-information-header": "Julita Glass",
+        "client-information-paragraph": "Velim Enim Ltd.",
+        "client-paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      {
+				"client-information-header": "Maria Anderson",
+        "client-information-paragraph": "Amsterdam.",
+        "client-paragraph": " do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ver adipisicing elit, sed do eercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      {
+				"client-information-header": "Grecy Marlo",
+        "client-information-paragraph": "New York City.",
+        "client-paragraph": "aboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consect."
+      }
+			])
+      </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+
+  </div>
+  
+  
+  </div>
+</section>

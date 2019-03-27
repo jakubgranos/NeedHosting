@@ -1,9 +1,10 @@
 .page-premium {
 	text-align: center;
+	margin: 0 0 60px 0;
 }
 .premium-wrapper {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: 40px 0 0 0;
@@ -18,6 +19,7 @@
 	background-color:$color-white;
 	transition: 0.4s all;
 	cursor: pointer;
+	 margin:  0 auto;
 
 	&:hover{
 		background-color:	$color-gallery;
@@ -58,10 +60,11 @@
 		background: none;
 		border: 2px solid $color-slate-gray;
 		border-radius: 20px;
-		width: 50%;
-		padding: 10px;
+		width: 60%;
+		padding: 15px;
 		margin:  0 auto;
 		transition: 0.4s all;
+		font-weight: bolder;
 		text-transform: uppercase;
 		&:hover{
 			background: $color-Tree-Poppy;
