@@ -34,3 +34,24 @@
     }
   }
 }
+.wooman {
+  margin: 50px 0 0 0;
+  height: 360px;
+  background: $color-white;
+  text-align: center;
+  @include media('<lg') {
+    height: 299px;
+  }
+
+  @include media('<md') {
+    height: 220px;
+  }
+
+  @include media('<lg') {
+   img {
+    width: 100%;
+    min-height: 333px;
+    height: auto;
+   }
+  }
+}
