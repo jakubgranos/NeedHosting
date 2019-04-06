@@ -4,6 +4,7 @@ window.onload = () => {
 }
 
 import "./modules/timer";
+import "./modules/validation";
 import "./modules/counter";
 import "./modules/hamburger-menu";
 import "./modules/sticky";
