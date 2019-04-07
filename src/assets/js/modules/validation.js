@@ -1,18 +1,19 @@
 let myForm = document.forms.myForm;
-let messeage = document.getElementById("messeage");
-let button  = myForm.button;
-function validation()  {
-  let passwordConfirm = document.getElementById("password-confirm")
-  if(myForm.username.value == "") {
-    messeage.innerHTML = "Error! Username is missing!";
-  }else if(myForm.email.value == "") {
-    messeage.innerHTML = "Error! Email is missing";
-  }else if(myForm.password.value || passwordConfirm.value == "") {
-    messeage.innerHTML= "Error! password is missing";
-  }else {
-    alert("fuk");
+
+let password = document.getElementById("password");
+let passwordConfirm = document.getElementById("passwordConfirm");
+
+
+myForm.onsubmit = function() {
+  if(password.value.length <=5 && passwordConfirm.value.length <=5) {
+    alert("password must have min 5 chars")
+    return false;
   }
-}
-button.onclick = function() {
-  validation();
+  else if(password.value != passwordConfirm.value){
+    alert("password is not good");
+    return false;
+  }else if(password.value == passwordConfirm.value) {
+    alert("Gratulation! Your registration has been successful");
+    return true;
+  }
 }

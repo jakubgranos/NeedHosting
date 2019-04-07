@@ -312,21 +312,20 @@
 		      </div>
 		      <div class="join-us-form">
 		        <form action="" name="myForm">
-		          <div class="messeage" id="messeage"></div>
 		          <select name="package">
 		            <option value="silver">select a package</option>
 		            <option value="silver">silver</option>
 		            <option value="gold">gold</option>
 		            <option value="platinium">platinium</option>
 		          </select>
-		          <input type="text" name="username" placeholder="Username">
-		          <input type="email" name="email" placeholder="Email">
-		          <input type="password" name="password" placeholder="Password">
-		          <input type="password" name="pssword-confirm" placeholder="Confirm Password" id="password-confirm">
-		          <label><input type="radio" name="terms" value="terms">​
+		          <input type="text" name="username" placeholder="Username" required>
+		          <input type="email" name="email" placeholder="Email" required>
+		          <input type="password" name="password" placeholder="Password" id="password" required>
+		          <input type="password" name="password-confirm" placeholder="Confirm Password" id="passwordConfirm" required>
+		          <label><input type="radio" name="terms" value="terms" required>​
 		            <p> I accept the<span>terms & conditions, privacy policy and risk disclosure</span></p>
 		          </label>
-		          <button type="button" name="button"> sing up now</button>
+		          <button type="submit" name="button" > sing up now</button>
 		        </form>
 		      </div>
 		    </div>
