@@ -10,7 +10,7 @@ myForm.onsubmit = function() {
     return false;
   }
   else if(password.value != passwordConfirm.value){
-    alert("password is not good");
+    alert("password must be the same");
     return false;
   }else if(password.value == passwordConfirm.value) {
     alert("Gratulation! Your registration has been successful");

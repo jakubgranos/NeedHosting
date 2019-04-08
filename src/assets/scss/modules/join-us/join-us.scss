@@ -1,7 +1,9 @@
 .page-join {
   width: 100%;
-  height: 800px;
+  height:  auto;
   background: $color-gallery;
+  max-width: 1920px;
+	margin:  0 auto;
 }
 .join-wrapper {
   height: 100%;
@@ -76,6 +78,135 @@
       font-size: 23px;
       text-transform: uppercase;
       color: $color-white;
+    }
+  }
+}
+.form-information {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.row {
+  justify-content: center;
+}
+.col {
+  background: $color-slate-gray;
+  width: 300px;
+  height: 200px;
+  margin: 40px 8px 0 8px;
+  padding: 30px;
+  color: $color-white;
+  @include media('<md') {
+    margin: 40px 0px 0 0px;
+  }
+  & h3 {
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: -0.4px;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+  }
+  & p {
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0.7;
+  }
+}
+.form-information-contact {
+  text-align: center;
+  margin: 25px 0 0 0;
+  & h3 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.32px;
+  }
+  & p {
+    font-size: 16px;
+    font-weight: 400;
+  
+  }
+  & button {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    color:  $color-black;
+    background: $color-supernova;
+    border: 1px solid $color-supernova;
+    padding: 15px 30px 10px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px 0 50px 0;
+  }
+
+  & i {
+    padding: 10px;
+    border: 1px solid $color-slate-gray;
+    border-radius: 20px;
+    transition: 0.4s all;
+  }
+  & i:nth-child(1){
+    padding: 10px 13px 10px 13px;
+  }
+  & i:hover {
+    color: $color-white;
+    cursor: pointer;
+    background: $color-azure;
+  }
+}
+.join-us-subscribe {
+  width: 100%;
+  height: 100%;
+  background: $color-azure;
+  max-width: 1920px;
+  margin:  0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 60px 0;
+  justify-content: space-around;
+  color:  $color-anakiwa;
+  & form {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    @include media('<md') {
+      flex-direction: column;
+    }
+    & label {
+      font-weight: bolder;
+      letter-spacing: -0.67px;
+      font-size: 28px;
+      padding: 30px;
+    }
+
+    input[name=username],input[name=email]{
+      width: 25%;
+      height: 40px;
+      padding: 0px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid $color-anakiwa;
+      margin: 0px 50px 0 20px;
+      @include media('<md') {
+        width: 70%;
+      }
+      &::placeholder {
+        color:  $color-anakiwa;
+      }
+    }
+    
+    & button {
+      background: none;
+      border:none;
+      border: 1px solid $color-anakiwa;
+      color: $color-anakiwa;
+      font-size: 30px;
+      font-weight: bolder;
+      padding: 0px 10px 8px 10px;
+      @include media('<md') {
+        margin: 10px 0 0 0;
+      }
     }
   }
 }
