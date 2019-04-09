@@ -1,0 +1,55 @@
+.footer{ 
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+	background: $color-white;
+	padding: 60px 0 60px 0;
+	color: $color-mako;
+	&-wrapper{
+		height: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		align-content: center; 
+		justify-content: space-between;
+	}
+
+	&-box, &-explore-box{
+		padding: 30px 0 0 0;
+
+		& h5 {
+			text-transform: capitalize;
+			font-weight: bolder;
+		}
+		
+		& p {
+			font-weight: 400;
+			padding: 10px 0 0 0;
+			line-height: 30px;
+		}
+		& p:nth-child(3){
+			padding: 100px 0 0 0;
+		}
+
+		& ul {
+			padding: 10px 0 0 0;
+			& li {
+				line-height: 30px;
+			}
+		}
+	}
+}
+
+.facebook, .linkedin, .twitter {
+	display: flex;
+	align-items: baseline;
+}
+.facebook{
+	& i {
+		padding: 13px;
+	}
+}
+.linkedin, .twitter {
+	& i {
+		padding: 10px;
+	}
+}
