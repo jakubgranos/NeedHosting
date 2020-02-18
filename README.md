@@ -1,2 +1,2 @@
 # NeedHosting
-Live: https://jakubgranos.github.io/NeedHosting/
+Live: https://needhosting.netlify.com/
